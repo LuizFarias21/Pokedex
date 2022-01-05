@@ -1,56 +1,301 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(19, 19, 19);
-}
-
-.navbar {
-    background-color: black;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid white;
-}
-
-.title {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    color: whitesmoke;
+    background-color: #b9b9b9;
+    font-family: 'Mukta', sans-serif;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .container {
-    padding: 40px;
-    background-image: linear-gradient(rgba(99, 250, 99, 0.973), rgb(191, 112, 248));
-    margin: 25px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    background-color: #dee2e6;
+    margin: 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    transition: opacity, transform 0.5s;
+    box-shadow: 0px 3px 1px #919292;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
 }
 
 .circle {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 9999px;
     position: absolute;
     z-index: 0;
 }
 
 img {
-
     height: 150px;
     width: 150px;
     z-index: 1;
+}
+
+h2 {
+    color: #222222;
+    letter-spacing: 2px;
+}
+
+span {
+    margin: 0px 5px;
+    font-family: 'Mukta', sans-serif;
+    padding: 2px 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer {
+    height: 4rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+a {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover {
+    transform: rotate(360deg);
+    opacity: 0.6;
+}
+
+.grass {
+    background-color: #499f68;
+    color: #15301f;
+    border: 1px solid #418f5d;
+}
+
+.grass:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f06c  ';
+}
+
+.poison {
+    background-color: #AB81CD;
+    color: #3f2b5f;
+    border: 1px solid #8866a3;
+}
+
+.poison:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f714  ';
+}
+
+.fire {
+    background-color: #ff424b;
+    color: #6e1c20;
+    border: 1px solid #e23841;
+}
+
+.fire:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f06d  ';
+}
+
+.water {
+    background-color: #429aff;
+    color: #1b4069;
+    border: 1px solid #3883d8;
+}
+
+.water:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f043  ';
+}
+
+.flying {
+    background-image: linear-gradient(#85baf7, #515d6b);
+    color: #1b4069;
+    border: 1px solid #475769;
+}
+
+.flying:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f4ba  ';
+}
+
+.bug {
+    background-color: #2f6945;
+    color: #0e2216;
+    border: 1px solid #224d32;
+}
+
+.bug:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f717  ';
+}
+
+.normal {
+    background-color: #9c9c9c;
+    color: #3f3f3f;
+    border: 1px solid #666666;
+}
+
+.normal:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f192  ';
+}
+
+.ground {
+    background-color: #998f02;
+    color: #353100;
+    border: 1px solid #6e6701;
+}
+
+.ground:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f6fc  ';
+}
+
+.electric {
+    background-color: #fded07;
+    color: #685f00;
+    border: 1px solid #d8ca01;
+}
+
+.electric:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0e7  ';
+}
+
+.fairy {
+    background-color: #fd90f4;
+    color: #883481;
+    border: 1px solid #c46abc;
+}
+
+.fairy:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f666  ';
+}
+
+.fighting {
+    background-color: #c04803;
+    color: #5c2201;
+    border: 1px solid #9c3b02;
+}
+
+.fighting:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f6de  ';
+}
+
+.rock {
+    background-color: #3a3a3a;
+    color: #9e9e9e;
+    border: 1px solid #272727;
+}
+
+.rock:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f6de  ';
+}
+
+.dragon {
+    background-image: linear-gradient(#4598f8, #fa4d47);
+    color: #b41b15;
+    border: 1px solid #475769;
+}
+
+.dragon:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f6d5  ';
+}
+
+.psychic {
+    background-color: #fc66ef;
+    color: #552251;
+    border: 1px solid #d152c7;
+}
+
+.psychic:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f5dc  ';
+}
+
+.ice {
+    background-color: #BFDBF7;
+    color: #485a6d;
+    border: 1px solid #8da2b8;
+}
+
+.ice:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f7ad  ';
+}
+
+.steel {
+    background-color: #627180;
+    color: #262d33;
+    border: 1px solid #47515a;
+}
+
+.steel:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f1b2  ';
+}
+
+.ghost {
+    background-color: #7004c9;
+    color: #2b014d;
+    border: 1px solid #56029b;
+}
+
+.ghost:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f6e2  ';
+}
+
+.dark {
+    background-color: #111111;
+    color: #cdcdce;
+    border: 1px solid #000000;
+}
+
+.dark:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f186  ';
 }
